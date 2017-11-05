@@ -1,0 +1,24 @@
+header{
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #DB504A;
+    color: #fff;
+    h1, nav{
+        display: inline-block;
+    }
+    nav{
+        li{
+            display: inline-block;
+            margin: 10px;
+            a{
+                padding: 5px;
+                color: #fff;
+            }
+            .active{
+                border-bottom: 2px solid; 
+            }
+        }
+    } 
+}
+
+

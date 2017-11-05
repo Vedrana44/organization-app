@@ -1,0 +1,16 @@
+@import '../../sass/variables';
+
+.todo-list{
+    max-width: 50%;
+    .todo-item{
+        background-color: #F8F8F8;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .todo-description{
+        color: $color-secondary;
+    }
+}
+
+

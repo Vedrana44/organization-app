@@ -1,0 +1,10 @@
+<app-todo-form></app-todo-form>
+
+<div class="todo-list">
+    <div class="todo-item" *ngFor="let todo of todos; let i = index" (click)="onEditItem(i)">
+        <span>{{ i + 1 }}. </span>
+        <span>{{ todo.title }}</span>
+        <span class="todo-description">{{ todo.description }}</span>
+    </div>
+</div>
+
