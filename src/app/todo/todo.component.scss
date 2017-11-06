@@ -1,16 +1,28 @@
 @import '../../sass/variables';
 
 .todo-list{
-    max-width: 50%;
+    margin-top: 50px;
+    max-width: 600px;
     .todo-item{
-        background-color: #F8F8F8;
-        border-radius: 4px;
+        div{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        background-color: $light-gray;
         padding: 10px;
         margin: 10px 0;
-    }
-    .todo-description{
-        color: $color-secondary;
+        position: relative;
+        .item-buttons{
+            position: absolute;
+            right: 10px;
+        }
+        input[type=checkbox] {
+            width: 25px;
+            height: 25px;
+        }
+        .checked {
+            text-decoration: line-through;
+        }
     }
 }
-
 

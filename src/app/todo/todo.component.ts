@@ -37,4 +37,8 @@ export class TodoComponent implements OnInit, OnDestroy {
     this.todoService.startedEditing.next(index);
   }
 
+  onRemove(index: number) {
+    this.todoService.removeTodo(index);
+  }
+
 }

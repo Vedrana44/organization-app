@@ -17,7 +17,6 @@ a{
 // Buttons
 .btn{
     padding: 10px 20px;
-    // border-radius: 4px;
     border: none;
     color: #fff;
     font-weight: 600;
@@ -49,7 +48,16 @@ a{
 
 // Input
 input{
-    border: 2px solid $color-secondary;
-    // border-radius: 4px;
-    padding: 5px;
+    background-color: $light-gray;
+    padding: 8px;
+    border: 2px solid $light-gray;
+    &:focus{
+        border: 2px solid $darker-gray;
+        outline: none;
+    }
+}
+
+// Reset
+p, h2{
+    margin: 0;
 }
