@@ -4,10 +4,8 @@
 
 <div class="todo-list">
     <div class="todo-item" *ngFor="let todo of todos; let i = index">
-        <div> 
-           <input type="checkbox" [(ngModel)]="todo.completed" />              
-        </div>
-        <div [ngClass]="{'checked': todo.completed}">
+        <input class="item-checkbox" type="checkbox" [(ngModel)]="todo.completed" />
+        <div class="item-content" [ngClass]="{'checked': todo.completed}">
             <h2><span>{{ i + 1 }}. </span>{{ todo.title }}</h2>
             <p class="todo-description">{{ todo.description }}</p>
         </div>

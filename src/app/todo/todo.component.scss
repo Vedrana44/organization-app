@@ -4,24 +4,28 @@
     margin-top: 50px;
     max-width: 600px;
     .todo-item{
-        div{
-            display: inline-block;
-            vertical-align: middle;
-        }
-        background-color: $light-gray;
+        background-color: #f1f1f1;
         padding: 10px;
         margin: 10px 0;
         position: relative;
-        .item-buttons{
+        .item-checkbox{
             position: absolute;
-            right: 10px;
-        }
-        input[type=checkbox] {
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
             width: 25px;
             height: 25px;
         }
-        .checked {
-            text-decoration: line-through;
+        .item-content{
+            padding: 10px 130px 10px 40px;
+            &.checked{
+                text-decoration: line-through;
+            }
+        }
+        .item-buttons{
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
     }
 }
