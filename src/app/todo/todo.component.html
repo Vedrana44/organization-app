@@ -3,13 +3,16 @@
 <app-todo-form></app-todo-form>
 
 <div class="todo-list">
+    <div *ngIf="todos.length < 1">
+        <p>Your todo list is empty.</p>
+    </div>
     <div class="todo-item" *ngFor="let todo of todos; let i = index">
         <input class="item-checkbox" type="checkbox" [(ngModel)]="todo.completed" />
         <div class="item-content" [ngClass]="{'checked': todo.completed}">
             <h2><span>{{ i + 1 }}. </span>{{ todo.title }}</h2>
             <p class="todo-description">{{ todo.description }}</p>
         </div>
-        <div class="item-buttons">
+        <div class="item-controls">
             <button class="btn-secondary" type="button" (click)="onEditItem(i)">Edit</button>                             
             <button class="btn-tertiary" type="button" (click)="onRemove(i)">X</button>
         </div>
