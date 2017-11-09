@@ -21,6 +21,9 @@
             &.checked{
                 text-decoration: line-through;
             }
+            .todo-description{
+                word-wrap: break-word;
+            }
         }
         .item-controls{
             position: absolute;
